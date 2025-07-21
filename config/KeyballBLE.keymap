@@ -82,6 +82,16 @@
             bindings = <&kp QUESTION>;
             key-positions = <29 30>;
         };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <41 40>;
+        };
+
+        task_manager {
+            bindings = <&kp LA(LC(DELETE))>;
+            key-positions = <34 35 36>;
+        };
     };
 
     macros {
@@ -118,10 +128,10 @@
 
         default_layer {
             bindings = <
-&kp Q                        &kp W             &kp E         &kp R                          &kp T                                                                &kp Y          &kp U  &lt 5 I    &kp O      &kp P
-&kp A                        &kp S             &kp D         &kp F                          &kp G        &mkp LCLK                       &kp COMMA               &kp H          &kp J  &kp K      &kp L      &kp MINUS
-&mt LEFT_SHIFT Z             &kp X             &kp C         &kp V                          &kp B        &mt LG(L) LEFT_WIN              &kp PERIOD              &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
-&mt LEFT_CONTROL LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 SINGLE_QUOTE  &lt 2 ENTER  &lt_to_layer_0 3 LA(GRAVE)      &lt_to_layer_0 1 SPACE  &kp BACKSPACE                               &kp LS(INTERNATIONAL_1)
+&kp Q             &kp W           &kp E         &kp R                          &kp T                                                                &kp Y          &kp U  &lt 5 I    &kp O      &kp P
+&kp A             &kp S           &kp D         &kp F                          &kp G        &mkp LCLK                       &kp COMMA               &kp H          &kp J  &kp K      &kp L      &kp MINUS
+&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V                          &kp B        &mt LG(L) LEFT_WIN              &kp PERIOD              &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &lt_to_layer_0 6 SINGLE_QUOTE  &lt 2 ENTER  &lt_to_layer_0 3 LA(GRAVE)      &lt_to_layer_0 1 SPACE  &kp BACKSPACE                               &kp LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
