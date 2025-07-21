@@ -64,12 +64,12 @@
         };
 
         left_kagikakko {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20>;
         };
 
         right_kagikakko {
-            bindings = <&kp PIPE>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <31 32>;
         };
 
@@ -138,10 +138,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_PARENTHESIS                                                     &kp EQUAL        &kp PLUS           &kp LCTRL      &kp DOLLAR       &kp INT_YEN
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOUBLE_QUOTES      &kp LC(LA(KP_NUMBER_0))      &kp ASTERISK          &kp EXCLAMATION  &kp COMMA          &kp HASH       &kp DOLLAR       &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD             &kp UNDERSCORE               &kp LEFT_PARENTHESIS  &kp QUESTION     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp RIGHT_BRACE  &kp PIPE
-&trans                      &trans           &trans           &trans           &trans                 &trans                       &trans                &trans                                                              &kp GRAVE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON                                                             &kp EQUAL        &kp PLUS           &kp CARET      &kp DOLLAR        &kp INT_YEN
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &kp LC(LA(KP_NUMBER_0))      &kp ASTERISK          &kp EXCLAMATION  &kp COMMA          &kp HASH       &kp LEFT_BRACKET  &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD         &kp UNDERSCORE               &kp LEFT_PARENTHESIS  &kp QUESTION     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp RIGHT_BRACE   &kp PIPE
+&trans                      &trans           &trans           &trans           &trans             &trans                       &trans                &trans                                                               &trans
             >;
         };
 
