@@ -53,11 +53,6 @@
             key-positions = <28 29>;
         };
 
-        win_lock {
-            bindings = <&kp LG(L)>;
-            key-positions = <27 26>;
-        };
-
         at {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <10 11>;
@@ -76,6 +71,16 @@
         right_kagikakko {
             bindings = <&kp PIPE>;
             key-positions = <31 32>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <17 18>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <29 30>;
         };
     };
 
@@ -115,7 +120,7 @@
             bindings = <
 &kp Q           &kp W             &kp E         &kp R                   &kp T                                                                          &kp Y          &kp U  &lt 5 I    &kp O      &kp P
 &kp A           &kp S             &kp D         &kp F                   &kp G        &mkp LCLK                                 &kp COMMA               &kp H          &kp J  &kp K      &kp L      &kp BACKSPACE
-&kp Z           &kp X             &kp C         &kp V                   &kp B        &kp LEFT_WIN                              &kp PERIOD              &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
+&kp Z           &kp X             &kp C         &kp V                   &kp B        &mt LG(L) LEFT_WIN                        &kp PERIOD              &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
 &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 MINUS  &lt 2 SLASH  &lt_to_layer_0 3 LS(INTERNATIONAL_1)      &lt_to_layer_0 1 SPACE  &kp LA(GRAVE)                               &kp ESCAPE
             >;
 
