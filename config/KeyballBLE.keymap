@@ -57,6 +57,26 @@
             bindings = <&kp LG(L)>;
             key-positions = <27 26>;
         };
+
+        at {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <10 11>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        left_kagikakko {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <19 20>;
+        };
+
+        right_kagikakko {
+            bindings = <&kp PIPE>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -93,10 +113,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W             &kp E         &kp R                   &kp T                                                              &kp Y          &kp U  &lt 5 I    &kp O      &kp P
-&kp A           &kp S             &kp D         &kp F                   &kp G        &mkp LCLK                                 &kp COMMA   &kp H          &kp J  &kp K      &kp L      &kp BACKSPACE
-&kp Z           &kp X             &kp C         &kp V                   &kp B        &kp LEFT_WIN                              &kp PERIOD  &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 MINUS  &lt 2 SLASH  &lt_to_layer_0 3 LS(INTERNATIONAL_1)      &kp SPACE   &kp LA(GRAVE)                               &kp ESCAPE
+&kp Q           &kp W             &kp E         &kp R                   &kp T                                                                          &kp Y          &kp U  &lt 5 I    &kp O      &kp P
+&kp A           &kp S             &kp D         &kp F                   &kp G        &mkp LCLK                                 &kp COMMA               &kp H          &kp J  &kp K      &kp L      &kp BACKSPACE
+&kp Z           &kp X             &kp C         &kp V                   &kp B        &kp LEFT_WIN                              &kp PERIOD              &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 MINUS  &lt 2 SLASH  &lt_to_layer_0 3 LS(INTERNATIONAL_1)      &lt_to_layer_0 1 SPACE  &kp LA(GRAVE)                               &kp ESCAPE
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -104,10 +124,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                      &kp F1   &kp F2   &kp F3   &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F11  &kp F12  &kp F13  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
             >;
         };
 
