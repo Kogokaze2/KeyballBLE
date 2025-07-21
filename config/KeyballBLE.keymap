@@ -118,10 +118,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W             &kp E         &kp R                   &kp T                                                                          &kp Y          &kp U  &lt 5 I    &kp O      &kp P
-&kp A           &kp S             &kp D         &kp F                   &kp G        &mkp LCLK                                 &kp COMMA               &kp H          &kp J  &kp K      &kp L      &kp BACKSPACE
-&kp Z           &kp X             &kp C         &kp V                   &kp B        &mt LG(L) LEFT_WIN                        &kp PERIOD              &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 MINUS  &lt 2 SLASH  &lt_to_layer_0 3 LS(INTERNATIONAL_1)      &lt_to_layer_0 1 SPACE  &kp LA(GRAVE)                               &kp ESCAPE
+&kp Q             &kp W             &kp E         &kp R                   &kp T                                                                &kp Y          &kp U  &lt 5 I    &kp O      &kp P
+&kp A             &kp S             &kp D         &kp F                   &kp G            &mkp LCLK                   &kp COMMA               &kp H          &kp J  &kp K      &kp L      &kp MINUS
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                   &kp B            &mt LG(L) LEFT_WIN          &kp PERIOD              &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
+&kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 SLASH  &lt 2 BACKSPACE  &lt_to_layer_0 3 ENTER      &lt_to_layer_0 1 SPACE  &kp LA(GRAVE)                               &kp LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -129,10 +129,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp F1   &kp F2   &kp F3   &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F11  &kp F12  &kp F13  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
+&trans     &trans     &trans                  &kp LC(LS(UP_ARROW))    &trans                                       &kp F1   &kp F2   &kp F3   &kp F4  &kp F5
+&kp LC(A)  &kp LC(S)  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(RIGHT_ARROW))  &trans      &trans  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
+&kp LC(Z)  &kp LC(X)  &kp LC(C)               &kp LC(V)               &kp LC(LS(V))            &trans      &trans  &kp F11  &kp F12  &kp F13  &trans  &trans
+&trans     &trans     &trans                  &trans                  &trans                   &trans      &trans  &trans                             &trans
             >;
         };
 
