@@ -101,6 +101,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        mitsui_email: mitsui_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(Y) &kp A &kp M &kp A &kp M &kp O &kp T &kp O &kp DOT &kp T &kp A &kp LBKT &kp M &kp I &kp T &kp S &kp U &kp I &kp DOT &kp C &kp O &kp M>;
+            label = "MITSUI_EMAIL";
+        };
     };
 
     behaviors {
@@ -139,10 +146,10 @@
 
         FUNCTION {
             bindings = <
-&trans     &trans     &trans     &trans     &trans                                &kp F1   &kp F2   &kp F3   &kp F4  &kp F5
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans             &trans  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
-&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(V))      &trans  &kp F11  &kp F12  &kp F13  &trans  &kp PAGE_UP
-&trans     &trans     &trans     &trans     &trans     &trans             &trans  &trans                             &kp PAGE_DOWN
+&trans     &trans     &trans     &trans     &trans                                       &kp F1   &kp F2   &kp F3   &kp F4  &kp F5
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans             &mitsui_email  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
+&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(V))      &trans         &kp F11  &kp F12  &kp F13  &trans  &kp PAGE_UP
+&trans     &trans     &trans     &trans     &trans     &trans             &trans         &trans                             &kp PAGE_DOWN
             >;
         };
 
