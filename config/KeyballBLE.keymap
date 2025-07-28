@@ -90,7 +90,12 @@
 
         task_manager {
             bindings = <&kp LA(LC(DELETE))>;
-            key-positions = <34 35 36>;
+            key-positions = <34 35>;
+        };
+
+        ampersand {
+            bindings = <&kp CARET>;
+            key-positions = <12 13>;
         };
     };
 
@@ -146,17 +151,17 @@
 
         FUNCTION {
             bindings = <
-&trans     &trans     &trans     &trans     &trans                                       &kp F1   &kp F2   &kp F3   &kp F4  &kp F5
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans             &mitsui_email  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
-&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(V))      &trans         &kp F11  &kp F12  &kp F13  &trans  &kp PAGE_UP
-&trans     &trans     &trans     &trans     &trans     &trans             &trans         &trans                             &kp PAGE_DOWN
+&trans     &trans     &trans     &trans     &trans                                &kp F1   &kp F2   &kp F3   &kp F4         &kp F5
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans             &trans  &kp F6   &kp F7   &kp F8   &kp F9         &kp F10
+&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(V))      &trans  &kp F11  &kp F12  &kp F13  &mitsui_email  &kp PAGE_UP
+&trans     &trans     &trans     &trans     &trans     &trans             &trans  &trans                                    &kp PAGE_DOWN
             >;
         };
 
         NUM {
             bindings = <
 &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_NUMBER_4  &kp KP_NUMBER_5                                                     &kp KP_NUMBER_6  &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp KP_NUMBER_0
-&kp COLON            &kp MINUS        &kp DOUBLE_QUOTES  &kp SLASH        &kp UNDERSCORE   &kp LC(LA(KP_NUMBER_0))      &kp ASTERISK          &kp EXCLAMATION  &kp COMMA          &kp HASH         &kp LEFT_BRACKET  &kp PERCENT
+&kp COLON            &kp MINUS        &kp DOUBLE_QUOTES  &kp SLASH        &kp UNDERSCORE   &kp LC(LA(KP_NUMBER_0))      &kp ASTERISK          &kp EXCLAMATION  &kp COMMA          &kp HASH         &kp LEFT_BRACKET  &kp CARET
 &kp INTERNATIONAL_3  &kp DOLLAR       &kp EQUAL          &kp PLUS         &kp PERCENT      &kp PERIOD                   &kp LEFT_PARENTHESIS  &kp QUESTION     &kp RIGHT_BRACKET  &kp BACKSLASH    &kp RIGHT_BRACE   &kp PIPE
 &trans               &trans           &trans             &trans           &trans           &trans                       &trans                &trans                                                                 &trans
             >;
