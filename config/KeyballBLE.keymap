@@ -102,6 +102,11 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <22 35>;
         };
+
+        numlock {
+            bindings = <&kp KP_NUMLOCK>;
+            key-positions = <35 36>;
+        };
     };
 
     macros {
