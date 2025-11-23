@@ -97,6 +97,11 @@
             bindings = <&kp CARET>;
             key-positions = <12 13>;
         };
+
+        task_view {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <22 35>;
+        };
     };
 
     macros {
