@@ -5,10 +5,11 @@
     require-prior-idle-ms = <200>;
     excluded-positions = <
         18 // J
-        19 // K
         20 // L
         22 // Shift
+        33 // Slash
         34 // Ctrl
+        42 // UnderBar
     >;
 };
 
