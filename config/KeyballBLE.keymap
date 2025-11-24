@@ -107,6 +107,11 @@
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <35 36>;
         };
+
+        test {
+            bindings = <&none>;
+            key-positions = <33 42>;
+        };
     };
 
     macros {
@@ -192,8 +197,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &mkp MB4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &mkp MB5
             >;
         };
 
