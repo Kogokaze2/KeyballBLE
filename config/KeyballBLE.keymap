@@ -21,11 +21,13 @@
         double_quotation {
             bindings = <&kp AT>;
             key-positions = <8 7>;
+            layers = <0>;
         };
 
         quotation {
             bindings = <&kp AMPERSAND>;
             key-positions = <6 5>;
+            layers = <0>;
         };
 
         tab {
@@ -36,26 +38,31 @@
         colon {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <28 40>;
+            layers = <0>;
         };
 
         semi_colon {
             bindings = <&kp SEMICOLON>;
             key-positions = <16 40>;
+            layers = <0>;
         };
 
         left_kakko {
             bindings = <&kp ASTERISK>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         right_kakko {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <28 29>;
+            layers = <0>;
         };
 
         at {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <10 11>;
+            layers = <0>;
         };
 
         escape {
@@ -66,11 +73,13 @@
         left_kagikakko {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20>;
+            layers = <0>;
         };
 
         right_kagikakko {
             bindings = <&kp BACKSLASH>;
             key-positions = <31 32>;
+            layers = <0>;
         };
 
         exclamation {
@@ -86,26 +95,31 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <41 40>;
+            layers = <0>;
         };
 
         task_manager {
             bindings = <&kp LA(LC(DELETE))>;
             key-positions = <34 35>;
+            layers = <0>;
         };
 
         ampersand {
             bindings = <&kp CARET>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         task_view {
             bindings = <&kp LG(TAB)>;
             key-positions = <22 35>;
+            layers = <0>;
         };
 
         numlock {
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <35 36>;
+            layers = <0>;
         };
     };
 
@@ -113,7 +127,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 5 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
 
@@ -148,15 +162,44 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Win_1 {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                             &kp T                                                                   &kp Y          &kp U  &lt 5 I    &kp O       &kp P
+&kp Q             &kp W         &kp E         &kp R                             &kp T                                                                   &kp Y          &kp U  &kp I      &kp O       &kp P
 &kp A             &kp S         &kp D         &kp F                             &kp G        &mkp LCLK                          &kp ASTERISK            &kp H          &kp J  &kp K      &kp L       &kp MINUS
 &kp LEFT_SHIFT    &kp Z         &kp X         &kp C                             &kp V        &kp B                              &kp LEFT_PARENTHESIS    &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 INTERNATIONAL_4  &lt 2 ENTER  &lt_to_layer_0 3 INT_MUHENKAN      &lt_to_layer_0 1 SPACE  &kp BACKSPACE                                &lt_to_layer_0 6 LS(INTERNATIONAL_1)
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INTERNATIONAL_4  &lt 1 ENTER  &lt_to_layer_0 5 INT_MUHENKAN      &lt_to_layer_0 4 SPACE  &kp BACKSPACE                                &lt_to_layer_0 7 LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
+        };
+
+        Win_2 {
+            bindings = <
+&kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_NUMBER_4  &kp KP_NUMBER_5                                                     &kp KP_NUMBER_6  &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp KP_NUMBER_0
+&kp COLON            &kp MINUS        &kp DOUBLE_QUOTES  &kp SLASH        &kp UNDERSCORE   &kp LC(LA(KP_NUMBER_0))      &kp ASTERISK          &kp EXCLAMATION  &kp COMMA          &kp HASH         &kp LEFT_BRACKET  &kp CARET
+&kp INTERNATIONAL_3  &kp DOLLAR       &kp EQUAL          &kp PLUS         &kp PERCENT      &kp PERIOD                   &kp LEFT_PARENTHESIS  &kp QUESTION     &kp RIGHT_BRACKET  &kp BACKSLASH    &kp RIGHT_BRACE   &kp PIPE
+&trans               &trans           &trans             &trans           &trans           &trans                       &trans                &trans                                                                 &trans
+            >;
+        };
+
+        Mac_1 {
+            bindings = <
+&kp Q             &kp W             &kp E         &kp R                             &kp T                                                                   &kp Y       &kp U  &kp I      &kp O       &kp P
+&kp A             &kp S             &kp D         &kp F                             &kp G        &mkp LCLK                          &kp LEFT_PARENTHESIS    &kp H       &kp J  &kp K      &kp L       &kp MINUS
+&kp LEFT_SHIFT    &kp Z             &kp X         &kp C                             &kp V        &kp B                              &kp RIGHT_PARENTHESIS   &kp N       &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 6 INTERNATIONAL_4  &lt 1 ENTER  &lt_to_layer_0 5 INT_MUHENKAN      &lt_to_layer_0 4 SPACE  &kp DELETE                                &lt_to_layer_0 7 LS(INTERNATIONAL_1)
+            >;
+
+            sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
+        };
+
+        Mac_2 {
+            bindings = <
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                                      &kp KP_NUMBER_6  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&kp PLUS         &kp MINUS        &kp ASTERISK     &kp SLASH        &kp EQUAL        &kp LC(LA(KP_NUMBER_0))      &kp LEFT_PARENTHESIS   &kp EXCLAMATION  &kp COMMA         &kp HASH           &kp AT_SIGN      &kp AMPERSAND
+&kp INT_YEN      &kp DOLLAR       &kp CARET        &kp TILDE        &kp PERCENT      &kp PERIOD                   &kp RIGHT_PARENTHESIS  &kp QUESTION     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp RIGHT_BRACE
+&trans           &trans           &trans           &trans           &trans           &trans                       &trans                 &trans                                                                 &trans
+            >;
         };
 
         FUNCTION {
@@ -165,15 +208,6 @@
 &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans             &trans  &kp F6   &kp F7   &kp F8   &kp F9         &kp F10
 &trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(V))      &trans  &kp F11  &kp F12  &kp F13  &mitsui_email  &kp PAGE_UP
 &trans     &trans     &trans     &trans     &trans     &trans             &trans  &trans                                    &kp PAGE_DOWN
-            >;
-        };
-
-        NUM {
-            bindings = <
-&kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_NUMBER_4  &kp KP_NUMBER_5                                                     &kp KP_NUMBER_6  &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp KP_NUMBER_0
-&kp COLON            &kp MINUS        &kp DOUBLE_QUOTES  &kp SLASH        &kp UNDERSCORE   &kp LC(LA(KP_NUMBER_0))      &kp ASTERISK          &kp EXCLAMATION  &kp COMMA          &kp HASH         &kp LEFT_BRACKET  &kp CARET
-&kp INTERNATIONAL_3  &kp DOLLAR       &kp EQUAL          &kp PLUS         &kp PERCENT      &kp PERIOD                   &kp LEFT_PARENTHESIS  &kp QUESTION     &kp RIGHT_BRACKET  &kp BACKSLASH    &kp RIGHT_BRACE   &kp PIPE
-&trans               &trans           &trans             &trans           &trans           &trans                       &trans                &trans                                                                 &trans
             >;
         };
 
@@ -197,16 +231,7 @@
             >;
         };
 
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_6 {
+        BT {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans     &trans      &studio_unlock  &trans        &trans        &trans        &trans        &bt BT_CLR
