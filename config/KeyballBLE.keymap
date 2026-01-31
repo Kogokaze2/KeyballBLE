@@ -127,6 +127,16 @@
             key-positions = <35 36>;
             layers = <0>;
         };
+
+        ToWin {
+            bindings = <&to 0>;
+            key-positions = <37 38>;
+        };
+
+        ToMac {
+            bindings = <&to 2>;
+            key-positions = <37 39>;
+        };
     };
 
     macros {
@@ -142,43 +152,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(Y) &kp A &kp M &kp A &kp M &kp O &kp T &kp O &kp DOT &kp T &kp A &kp LBKT &kp M &kp I &kp T &kp S &kp U &kp I &kp DOT &kp C &kp O &kp M>;
             label = "MITSUI_EMAIL";
-        };
-
-        bt0: bt0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 2>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 0>,
-                <&macro_wait_time 500>;
-
-            label = "BT0";
-        };
-
-        bt1: bt1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 2>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 1>,
-                <&macro_wait_time 500>,
-                <&tog_on 2>;
-
-            label = "BT1";
-        };
-
-        bt2: bt2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 2>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 2>,
-                <&macro_wait_time 500>;
-
-            label = "BT2";
         };
     };
 
@@ -290,10 +263,10 @@
 
         BT {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                              &bt0    &bt1    &bt2    &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &studio_unlock  &trans  &trans  &trans  &trans        &bt BT_CLR
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader     &trans  &trans  &trans  &trans        &bt BT_CLR_ALL
-&trans  &trans        &trans        &trans        &trans  &trans      &trans          &trans                                &trans
+&trans  &trans        &trans        &trans        &trans                              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans  &trans      &studio_unlock  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader     &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans  &trans      &trans          &trans                                                  &trans
             >;
         };
     };
