@@ -137,6 +137,43 @@
             bindings = <&none &kp LS(Y) &kp A &kp M &kp A &kp M &kp O &kp T &kp O &kp DOT &kp T &kp A &kp LBKT &kp M &kp I &kp T &kp S &kp U &kp I &kp DOT &kp C &kp O &kp M>;
             label = "MITSUI_EMAIL";
         };
+
+        bt0: bt0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>;
+
+            label = "BT0";
+        };
+
+        bt1: bt1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>,
+                <&tog_on 2>;
+
+            label = "BT1";
+        };
+
+        bt2: bt2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 2>,
+                <&macro_wait_time 500>;
+
+            label = "BT2";
+        };
     };
 
     behaviors {
