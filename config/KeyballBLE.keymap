@@ -16,8 +16,6 @@
 #define BT 7
 #define SCROLL 8
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 6 10000>; };
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
