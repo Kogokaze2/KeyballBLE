@@ -214,10 +214,10 @@
 
         Mac_1 {
             bindings = <
-&kp Q             &kp W             &kp E         &kp R                  &kp T                                                       &kp Y       &kp U  &kp I      &kp O       &kp P
-&kp A             &kp S             &kp D         &kp F                  &kp G        &mkp LCLK               &kp LEFT_PARENTHESIS   &kp H       &kp J  &kp K      &kp L       &kp MINUS
-&kp LEFT_SHIFT    &kp Z             &kp X         &kp C                  &kp V        &kp B                   &kp RIGHT_PARENTHESIS  &kp N       &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 6 INTERNATIONAL_4  &lt 3 ENTER  &lt 5 INT_MUHENKAN      &lt 4 SPACE            &kp DELETE                                &lt 7 LS(INTERNATIONAL_1)
+&kp Q             &kp W             &kp E         &kp R        &kp T                                                &kp Y          &kp U  &kp I      &kp O       &kp P
+&kp A             &kp S             &kp D         &kp F        &kp G        &mkp LCLK        &kp LEFT_PARENTHESIS   &kp H          &kp J  &kp K      &kp L       &kp MINUS
+&kp LEFT_SHIFT    &kp Z             &kp X         &kp C        &kp V        &kp B            &kp RIGHT_PARENTHESIS  &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 6 LANG1  &lt 3 ENTER  &lt 5 LANG2      &lt 4 SPACE            &kp BACKSPACE                                &lt 7 LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
