@@ -24,13 +24,13 @@
     combos {
         compatible = "zmk,combos";
 
-        double_quotation {
+        Win_double_quotation {
             bindings = <&kp AT>;
             key-positions = <8 7>;
             layers = <0>;
         };
 
-        quotation {
+        Win_quotation {
             bindings = <&kp AMPERSAND>;
             key-positions = <6 5>;
             layers = <0>;
@@ -41,13 +41,13 @@
             key-positions = <4 3>;
         };
 
-        colon {
+        Win_colon {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <28 40>;
             layers = <0>;
         };
 
-        semi_colon {
+        Win_semi_colon {
             bindings = <&kp SEMICOLON>;
             key-positions = <16 40>;
             layers = <0>;
@@ -101,7 +101,6 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <41 40>;
-            layers = <0>;
         };
 
         task_manager {
@@ -136,6 +135,18 @@
         ToMac {
             bindings = <&to 2>;
             key-positions = <37 39>;
+        };
+
+        Mac_double_quotation {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <7 8>;
+            layers = <2>;
+        };
+
+        Mac_quotation {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <5 6>;
+            layers = <2>;
         };
     };
 
