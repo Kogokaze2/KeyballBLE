@@ -203,7 +203,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Win_1 {
+        WIN_1 {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                  &kp T                                                      &kp Y          &kp U  &kp I      &kp O       &kp P
 &kp A             &kp S         &kp D         &kp F                  &kp G        &mkp LCLK               &kp ASTERISK          &kp H          &kp J  &kp K      &kp L       &kp MINUS
@@ -214,7 +214,7 @@
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
 
-        Win_2 {
+        WIN_2 {
             bindings = <
 &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_NUMBER_4  &kp KP_NUMBER_5                                                     &kp KP_NUMBER_6  &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp KP_NUMBER_0
 &kp COLON            &kp MINUS        &kp DOUBLE_QUOTES  &kp SLASH        &kp UNDERSCORE   &kp LC(LA(KP_NUMBER_0))      &kp ASTERISK          &kp EXCLAMATION  &kp COMMA          &kp HASH         &kp LEFT_BRACKET  &kp CARET
@@ -223,7 +223,7 @@
             >;
         };
 
-        Mac_1 {
+        MAC_1 {
             bindings = <
 &kp Q             &kp W             &kp E         &kp R        &kp T                                                &kp Y          &kp U  &kp I      &kp O       &kp P
 &kp A             &kp S             &kp D         &kp F        &kp G        &mkp LCLK        &kp LEFT_PARENTHESIS   &kp H          &kp J  &kp K      &kp L       &kp MINUS
@@ -234,7 +234,7 @@
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
 
-        Mac_2 {
+        MAC_2 {
             bindings = <
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                                      &kp KP_NUMBER_6  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &kp KP_NUMBER_0
 &kp PLUS         &kp MINUS        &kp ASTERISK     &kp SLASH        &kp EQUAL        &kp LC(LA(KP_NUMBER_0))      &kp LEFT_PARENTHESIS   &kp EXCLAMATION  &kp COMMA         &kp HASH           &kp AT_SIGN      &kp AMPERSAND
